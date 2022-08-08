@@ -218,6 +218,13 @@ nav.sticky{
     border-radius: 10px;
 }
 
+:root {
+    --animate-duration: 2s;
+  }
+
+
+
+
 /*main section*/
 
  .main-sect{
@@ -226,6 +233,7 @@ nav.sticky{
     @include grid-2();
     align-items: inherit;
 margin-bottom: 8.3rem;
+
 
 
     .left{
@@ -237,7 +245,7 @@ margin-bottom: 8.3rem;
         font-weight: 400;
         color: var(--color-font);
         text-transform: uppercase;
-        padding-bottom: 1.3rem
+        padding-bottom: 1.3rem;
       }
 
       h3{
@@ -354,7 +362,7 @@ margin-bottom: 8.3rem;
                     .dots{
                         img{
                             position: absolute;
-                         color: grey;
+                         
                         }
                     }
                     .icon{
@@ -715,20 +723,29 @@ flex-direction: column;
 
 
 
-.home-btn{
-    position: absolute;
-    .btn{
-        background-color: #8f1bdc;
-        padding: 1.5rem 1.5rem;
-        border-radius: 50%;
-        a{
 
+.top-of-page{
+    position:fixed;
+    bottom:20px;
+    right:24px;
+    transition:300ms;
+    opacity: 1;
+        button{
+        background-color: #8f1bdc;
+        padding: 1rem 1rem;
+        border-radius: 50%;
+        border: none;
+            i{
+                color: #fff;
+                font-size: 20px;
+            }
         }
-    }
 }
 
-
-
+.top-of-page.fade-out{
+    right:0px;
+    opacity: 0;
+}
 
 
 
@@ -865,8 +882,8 @@ flex-direction: column;
     .dots{
         position: absolute;
         display: inherit;
-        top: 5080px;
-        left: -1px;
+        top: 5550px;
+        left: -3px;
     }
 }
 
@@ -879,7 +896,8 @@ flex-direction: column;
         display: inherit;
         position: absolute;
         z-index: -1;
-        left: 20px;
+        left: -90px;
+        top: 5798px;
     }
 }
 
@@ -1032,6 +1050,7 @@ align-items: start;
     nav {
         flex-direction: column;
         align-items: flex-start;
+        z-index: 2;
     }
 
     .toggle-button {
@@ -1129,10 +1148,12 @@ align-items: start;
         .logo{
             padding-left: 1.1rem;
         }
+        
         .toggle-button{
             top: 2.1rem;
             right: 7rem;
         }
+        
     }
 
     .main-sect{
@@ -1218,16 +1239,21 @@ align-items: start;
         }
     }
 
+    .top-of-page{
+        right: 74px;
+    }
+
 }
 
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (min-width: 398px) {
-.toggle-button{
+/*
+    .toggle-button{
     left: 310px;
     top: 40px;
 }
-
+*/
 
 
     
@@ -1247,6 +1273,10 @@ align-items: start;
         flex-direction: column;
     }
     
+}
+
+@media only screen and (max-width: 1200px) {
+
 }
 
 

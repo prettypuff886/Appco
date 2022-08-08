@@ -152,6 +152,10 @@ nav.sticky {
   border-radius: 10px;
 }
 
+:root {
+  --animate-duration: 2s;
+}
+
 /*main section*/
 .main-sect {
   background-color: var(--color-extra);
@@ -350,7 +354,6 @@ nav.sticky {
 
 .sect-3 .sect-3-cont .row .row-item .dots img {
   position: absolute;
-  color: grey;
 }
 
 .sect-3 .sect-3-cont .row .row-item .icon {
@@ -771,14 +774,30 @@ nav.sticky {
   width: 60px;
 }
 
-.home-btn {
-  position: absolute;
+.top-of-page {
+  position: fixed;
+  bottom: 20px;
+  right: 24px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  opacity: 1;
 }
 
-.home-btn .btn {
+.top-of-page button {
   background-color: #8f1bdc;
-  padding: 1.5rem 1.5rem;
+  padding: 1rem 1rem;
   border-radius: 50%;
+  border: none;
+}
+
+.top-of-page button i {
+  color: #fff;
+  font-size: 20px;
+}
+
+.top-of-page.fade-out {
+  right: 0px;
+  opacity: 0;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -922,8 +941,8 @@ nav.sticky {
   .sect-7 .dots {
     position: absolute;
     display: inherit;
-    top: 5080px;
-    left: -1px;
+    top: 5550px;
+    left: -3px;
   }
   .sect-8 {
     display: -webkit-box;
@@ -941,7 +960,8 @@ nav.sticky {
     display: inherit;
     position: absolute;
     z-index: -1;
-    left: 20px;
+    left: -90px;
+    top: 5798px;
   }
   .rotate {
     -webkit-animation: rotation 20s;
@@ -1068,6 +1088,7 @@ nav.sticky {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    z-index: 2;
   }
   .toggle-button {
     display: -webkit-box;
@@ -1225,14 +1246,19 @@ nav.sticky {
   .sect-6 .sect-6-cont .slider .slide-wrapper {
     padding: inherit;
   }
+  .top-of-page {
+    right: 74px;
+  }
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (min-width: 398px) {
-  .toggle-button {
+  /*
+    .toggle-button{
     left: 310px;
     top: 40px;
-  }
+}
+*/
 }
 
 @media only screen and (max-width: 1200px) {

@@ -92,3 +92,20 @@ $('.responsive').slick({
     ]
   });
       
+
+  /* top of page button */
+  if ($('.top-of-page').length > 0) {     
+    //when scrolling, trigger the function
+          $(document).scroll(function () {
+            // display button when scolling past 100px
+              if ($(document).scrollTop() >= 100) {
+                  $('.top-of-page').removeClass('fade-out');
+              } else {
+                  $('.top-of-page').addClass('fade-out');
+              }
+          })
+  
+          $('.top-of-page').click(function () {
+              $("html, body").animate({scrollTop: "0px"}, 500);
+          })
+      }
