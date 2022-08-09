@@ -1193,7 +1193,7 @@ nav.sticky {
     padding-left: 1.1rem;
   }
   nav .toggle-button {
-    top: 2.1rem;
+    top: 1.5rem;
     right: 6rem;
   }
   .main-sect {
@@ -1288,7 +1288,7 @@ nav.sticky {
         -ms-flex-align: start;
             align-items: flex-start;
     z-index: 2;
-    width: 90%;
+    width: 100%;
   }
   .toggle-button {
     display: -webkit-box;
