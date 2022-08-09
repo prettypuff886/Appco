@@ -813,6 +813,20 @@ flex-direction: column;
 }
 
 
+.sect-4{
+    .right{
+        .swiper{
+            .swiper-wrapper{
+                .swiper-slide{
+                    display: flex;
+                    justify-content: center;
+                    padding-bottom: 2rem;
+                }
+            }
+        }
+    }
+}
+
 .sect-5{
     .sect-5-cont{
         h5{
@@ -1029,7 +1043,15 @@ align-items: start;
             }
         }
         .right{
-            padding: 1rem 5rem;
+            .swiper{
+                .swiper-wrapper{
+                    .swiper-slide{
+                        display: flex;
+                        justify-content: center;
+                        padding-bottom: 2rem;
+                    }
+                }
+            }
         }
     }
 
@@ -1037,6 +1059,8 @@ align-items: start;
     .sect-7{
         flex-direction: row;
     }
+
+
 
 }
 
@@ -1151,7 +1175,7 @@ align-items: start;
         
         .toggle-button{
             top: 2.1rem;
-            right: 7rem;
+            right: 6rem;
         }
         
     }
@@ -1246,23 +1270,9 @@ align-items: start;
 }
 
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (min-width: 398px) {
-/*
-    .toggle-button{
-    left: 310px;
-    top: 40px;
-}
-*/
 
-
-    
-}
 
 @media only screen and (max-width: 1200px) {
-
-
-
 
     .sect-6{
         margin-top: 96rem;
@@ -1275,8 +1285,78 @@ align-items: start;
     
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 930px)  and (min-width: 730px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        z-index: 2;
+        width: 90%;
+    }
 
+    .toggle-button {
+        display: flex;
+        right: 1rem;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+        padding-bottom: 2.3rem;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .home{
+        border: none;
+    }
+    
+    
+    
+    
+    
+    .main-sect{
+        .left{
+            .btn-row{
+             
+                .btn-1{
+                    margin-bottom: 1rem;
+                }
+                .btn-2{
+                    margin-left: 5px;
+                }
+
+            }
+        }
+    }
+
+
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    nav{
+        width: 100vw;
+        .toggle-button{
+            right: 4rem;
+        }
+    }
 }
 
 

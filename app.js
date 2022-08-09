@@ -30,16 +30,14 @@ $('.responsive').slick({
     slidesToScroll: 4,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1100,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true
+          slidesToScroll: 3
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 800,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2
@@ -70,7 +68,7 @@ $('.responsive').slick({
     slidesToScroll: 3,
     responsive: [
       {
-        breakpoint: 1400,
+        breakpoint: 1450,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,

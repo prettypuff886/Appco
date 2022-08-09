@@ -874,6 +874,15 @@ nav.sticky {
   .sect-3 .sect-3-cont .row .row-item {
     padding: 3.5rem 5rem;
   }
+  .sect-4 .right .swiper .swiper-wrapper .swiper-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 2rem;
+  }
   .sect-5 .sect-5-cont h5 {
     font-size: 50px;
   }
@@ -1067,8 +1076,14 @@ nav.sticky {
             align-items: center;
     text-align: center;
   }
-  .sect-4 .right {
-    padding: 1rem 5rem;
+  .sect-4 .right .swiper .swiper-wrapper .swiper-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 2rem;
   }
   .sect-7 {
     -webkit-box-orient: horizontal;
@@ -1179,7 +1194,7 @@ nav.sticky {
   }
   nav .toggle-button {
     top: 2.1rem;
-    right: 7rem;
+    right: 6rem;
   }
   .main-sect {
     display: -ms-grid;
@@ -1251,16 +1266,6 @@ nav.sticky {
   }
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (min-width: 398px) {
-  /*
-    .toggle-button{
-    left: 310px;
-    top: 40px;
-}
-*/
-}
-
 @media only screen and (max-width: 1200px) {
   .sect-6 {
     margin-top: 96rem;
@@ -1270,6 +1275,67 @@ nav.sticky {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 930px) and (min-width: 730px) {
+  nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    z-index: 2;
+    width: 90%;
+  }
+  .toggle-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    right: 1rem;
+  }
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+  .navbar-links ul {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar-links ul li {
+    text-align: center;
+    padding-bottom: 2.3rem;
+  }
+  .navbar-links ul li a {
+    padding: .5rem 1rem;
+  }
+  .navbar-links.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .home {
+    border: none;
+  }
+  .main-sect .left .btn-row .btn-1 {
+    margin-bottom: 1rem;
+  }
+  .main-sect .left .btn-row .btn-2 {
+    margin-left: 5px;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  nav {
+    width: 100vw;
+  }
+  nav .toggle-button {
+    right: 4rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
